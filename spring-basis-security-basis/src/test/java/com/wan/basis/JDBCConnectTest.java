@@ -24,7 +24,7 @@ public class JDBCConnectTest {
 	public void test() throws Exception {
 		try (Connection con = ds.getConnection()) {
 
-            System.out.println("\n >>>>>>>>>> Connection  123123 출력 : " + con + "\n");
+            System.out.println("\n >>>>>>>>>> Connection 출력 : " + con + "\n");
  
         } catch (Exception e) {
             e.printStackTrace();
