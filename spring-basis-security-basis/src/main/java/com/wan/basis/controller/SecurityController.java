@@ -21,13 +21,9 @@ public class SecurityController {
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test(Locale locale, Model model) {
-<<<<<<< Upstream, based on origin/hukim
-		logger.info("Welcome home! The client locale is {}!!!!!!!!!!.", locale);
-=======
-		
-		logger.info("Welcome home! The client locale is {}!!!.", locale);
 
->>>>>>> 1e03eb2 test
+		logger.info("Welcome home! The client locale is {}!!!!!!!!!!.", locale);
+		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
