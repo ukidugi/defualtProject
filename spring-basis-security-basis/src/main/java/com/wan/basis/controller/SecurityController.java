@@ -23,7 +23,7 @@ public class SecurityController {
 	public String test(Locale locale, Model model) {
 
 		logger.info("Welcome home! The client locale is { }. ", locale);
-		
+
 
 		logger.info("Welcome home! The client locale is { }충돌 실험2. ", locale);
 
@@ -34,7 +34,12 @@ public class SecurityController {
 
 
 		logger.info("Welcome home! The client locale is { } 충돌병합1. ", locale);
+
 		logger.info("Welcome home! The client locale is { }충돌 실험2. ", locale);
+
+
+		logger.info("Welcome home! The client locale is { }충돌 실험1. ", locale);
+
 
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
