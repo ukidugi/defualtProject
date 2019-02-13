@@ -22,8 +22,9 @@ public class SecurityController {
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test(Locale locale, Model model) {
 		
+		logger.info("Welcome home! The client locale is { } 충돌병합1. ", locale);
 		logger.info("Welcome home! The client locale is { }충돌 실험2. ", locale);
-		
+
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
